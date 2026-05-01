@@ -94,6 +94,25 @@ nav{
 .nav-links a:hover::after{right:0}
 
 .nav-right{display:flex;align-items:center;gap:12px}
+.nav-toggle{
+  display:none;
+  width:46px;height:46px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:transparent;
+  color:var(--white);
+  align-items:center;justify-content:center;
+  cursor:pointer;
+  flex-direction:column;
+  gap:5px;
+}
+.nav-toggle span{
+  width:18px;height:2px;background:var(--white);
+  transition:transform 0.25s ease,opacity 0.25s ease;
+}
+.nav-menu{
+  display:contents;
+}
 .btn-nav{
   padding:9px 22px;
   border:1.5px solid var(--red);
@@ -919,9 +938,55 @@ footer{
 }
 
 @media (max-width:900px){
-  nav{height:auto;padding:18px 4vw;flex-wrap:wrap;gap:16px}
-  .nav-links{order:3;width:100%;justify-content:flex-start;flex-wrap:wrap}
-  .hero{padding-top:110px}
+  nav{
+    height:auto;
+    padding:14px 4vw;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:12px 16px;
+  }
+  .nav-left{min-width:0}
+  .nav-brand-name{font-size:18px;letter-spacing:1.6px}
+  .nav-brand-sub{font-size:8px;letter-spacing:2px}
+  .nav-toggle{display:flex;justify-self:end}
+  .nav-menu{
+    display:none;
+    grid-column:1 / -1;
+    width:100%;
+    padding:14px;
+    border:1px solid var(--border);
+    border-radius:14px;
+    background:rgba(13,16,23,0.98);
+    box-shadow:0 16px 36px rgba(0,0,0,0.3);
+  }
+  nav.nav-open .nav-menu{display:block}
+  nav.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  nav.nav-open .nav-toggle span:nth-child(2){opacity:0}
+  nav.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-right{justify-self:stretch;width:100%;margin-top:12px}
+  .btn-nav{padding:11px 16px;font-size:10px;letter-spacing:1.1px;width:100%;justify-content:center}
+  .nav-links{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+  .nav-links li{list-style:none}
+  .nav-links a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:40px;
+    padding:10px 8px;
+    text-align:center;
+    background:rgba(255,255,255,0.03);
+    border:1px solid var(--border-subtle);
+    border-radius:8px;
+    letter-spacing:1px;
+  }
+  .nav-links a::after{display:none}
+  .hero{padding-top:102px}
   .hero-content{display:flex;flex-direction:column}
   .hero-center{order:1}
   .hero-content>.hero-side:first-of-type{order:2}
@@ -939,6 +1004,15 @@ footer{
 }
 
 @media (max-width:600px){
+  nav{padding:12px 4vw}
+  .nav-left{width:100%}
+  .nav-logo{width:46px;height:46px}
+  .nav-brand-name{font-size:16px}
+  .nav-brand-sub{font-size:7px;letter-spacing:1.6px}
+  .nav-menu{padding:12px}
+  .nav-links{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav-links a{font-size:10px;min-height:38px}
+  .hero{padding-top:96px}
   .hero-subtitle,.section-desc,.proses-highlight,.cta-final-content p{font-size:13px}
   .hero-actions,.stok-actions,.lokasi-actions,.cta-final-actions{flex-direction:column}
   .btn-red,.btn-ghost,.btn-wa{width:100%}
@@ -972,16 +1046,24 @@ footer{
     </div>
   </div>
 
-  <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#pain-point">Kenapa Tidar</a></li>
-    <li><a href="#stok">Stok</a></li>
-    <li><a href="#ulasan">Ulasan</a></li>
-    <li><a href="#lokasi">Kontak</a></li>
-  </ul>
+  <button class="nav-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="navMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <div class="nav-right">
-    <a href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20ingin%20konsultasi%20mobil%20di%20Tidar%20Motor" class="btn-nav" target="_blank" rel="noreferrer">Chat WhatsApp</a>
+  <div class="nav-menu" id="navMenu">
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#pain-point">Kenapa Tidar</a></li>
+      <li><a href="#stok">Stok</a></li>
+      <li><a href="#ulasan">Ulasan</a></li>
+      <li><a href="#lokasi">Kontak</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20ingin%20konsultasi%20mobil%20di%20Tidar%20Motor" class="btn-nav" target="_blank" rel="noreferrer">Chat WhatsApp</a>
+    </div>
   </div>
 </nav>
 
@@ -1711,6 +1793,20 @@ footer{
 
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
+  const nav = document.querySelector('nav');
+  const navToggle = document.querySelector('.nav-toggle');
+
+  const closeMobileNav = () => {
+    nav.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+  }
 
   window.addEventListener('scroll', () => {
     let current = '';
@@ -1720,6 +1816,16 @@ footer{
     navLinks.forEach(a => {
       a.style.color = a.getAttribute('href') === '#' + current ? '#fff' : '';
     });
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 900) closeMobileNav();
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) closeMobileNav();
   });
 
   document.querySelectorAll('.faq-question').forEach((button) => {
