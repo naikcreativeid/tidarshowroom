@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tidar Motor Duren Sawit Jakarta Timur | Mobil Bekas Siap Pakai & Test Drive</title>
+<meta name="description" content="Tidar Motor Duren Sawit Jakarta Timur jual mobil bekas siap pakai dengan proses transparan, dibantu leasing sampai ACC, garansi, asuransi, dan booking test drive via WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --red:#E0191A;
+  --red-bright:#FF2020;
+  --red-glow:rgba(224,25,26,0.16);
+  --red-soft:rgba(224,25,26,0.08);
+  --white:#ffffff;
+  --off:#F7F7F9;
+  --off-2:#F1F2F5;
+  --ink:#101216;
+  --ink-soft:#4F5663;
+  --card:#FFFFFF;
+  --border:rgba(224,25,26,0.18);
+  --border-subtle:rgba(16,18,22,0.08);
+  --shadow:0 18px 45px rgba(10,12,18,0.08);
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:'Montserrat',sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(224,25,26,0.08), transparent 20%),
+    linear-gradient(180deg, #ffffff 0%, #f7f7f9 100%);
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+section{position:relative}
+
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#f0f0f2}
+::-webkit-scrollbar-thumb{background:var(--red);border-radius:99px}
+
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:999;
+  min-height:76px;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;
+  padding:14px 4vw;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border-subtle);
+}
+.nav-left{display:flex;align-items:center;gap:14px}
+.nav-logo{
+  width:56px;height:56px;border-radius:12px;
+  overflow:hidden;background:#fff;
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow);padding:4px;
+}
+.nav-logo img{width:100%;height:100%;object-fit:contain}
+.nav-brand-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.45rem;letter-spacing:2px;line-height:1;color:var(--ink);
+}
+.nav-brand-sub{
+  font-size:10px;font-weight:700;color:var(--red);
+  letter-spacing:2px;text-transform:uppercase;margin-top:3px;
+}
+.nav-toggle{
+  display:none;width:46px;height:46px;border-radius:12px;
+  border:1px solid var(--border);background:#fff;
+  align-items:center;justify-content:center;flex-direction:column;gap:5px;
+  cursor:pointer;
+}
+.nav-toggle span{width:18px;height:2px;background:var(--ink);transition:0.25s ease}
+.nav-menu{display:contents}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
+.nav-links a{
+  font-size:11px;font-weight:700;color:var(--ink-soft);
+  letter-spacing:1.2px;text-transform:uppercase;position:relative;
+}
+.nav-links a::after{
+  content:'';position:absolute;left:0;right:100%;bottom:-5px;height:1px;
+  background:var(--red);transition:right 0.25s ease;
+}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{right:0}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-phone{
+  display:flex;flex-direction:column;align-items:flex-end;
+  color:var(--ink);line-height:1.2;
+}
+.nav-phone strong{
+  font-size:14px;font-weight:800;
+}
+.nav-phone span{
+  font-size:10px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:1px;
+}
+.btn-nav,.btn-red,.btn-ghost{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border-radius:10px;
+  font-size:12px;font-weight:800;letter-spacing:1.1px;
+  text-transform:uppercase;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease,border-color .18s ease;
+}
+.btn-nav:hover,.btn-red:hover,.btn-ghost:hover{transform:translateY(-1px)}
+.btn-nav{
+  min-height:46px;padding:0 20px;
+  background:var(--red);color:#fff;border:1px solid var(--red);
+  box-shadow:0 12px 28px rgba(224,25,26,0.18);
+}
+.btn-red{
+  min-height:50px;padding:0 26px;
+  background:var(--red);color:#fff;border:1px solid var(--red);
+  box-shadow:0 14px 30px rgba(224,25,26,0.16);
+}
+.btn-ghost{
+  min-height:50px;padding:0 24px;
+  background:#fff;color:var(--ink);border:1px solid var(--border-subtle);
+}
+
+.hero{
+  min-height:100vh;
+  padding:108px 4vw 72px;
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.88) 35%, rgba(255,255,255,0.3) 60%, rgba(255,255,255,0.85) 100%),
+    url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+}
+.hero-inner{
+  position:relative;z-index:1;
+  max-width:1360px;margin:0 auto;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--red-soft);border:1px solid var(--border);
+  border-radius:999px;padding:8px 16px;
+  color:var(--red);font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+}
+.hero-copy h1{
+  margin:20px 0 14px;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(3.5rem,7vw,6rem);
+  line-height:.92;letter-spacing:2px;color:var(--ink);
+}
+.hero-copy h1 .red{color:var(--red)}
+.hero-copy p{
+  max-width:720px;
+  color:var(--ink-soft);font-size:15px;line-height:1.95;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-quick{
+  display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;
+}
+.hero-quick-card{
+  min-width:170px;
+  background:#fff;border:1px solid var(--border-subtle);border-radius:14px;
+  padding:16px 16px 14px;box-shadow:var(--shadow);
+}
+.hero-quick-card strong{
+  display:block;font-size:13px;color:var(--ink);margin-bottom:5px;
+}
+.hero-quick-card span{
+  font-size:12px;color:var(--ink-soft);line-height:1.65;
+}
+.hero-proof{
+  margin-top:30px;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+}
+.hero-proof-item{
+  background:#fff;border:1px solid var(--border-subtle);border-radius:18px;
+  padding:20px;box-shadow:var(--shadow);
+}
+.hero-proof-item .num{
+  font-family:'Bebas Neue',sans-serif;font-size:2.6rem;line-height:1;color:var(--red);
+}
+.hero-proof-item p{font-size:12px;color:var(--ink-soft);line-height:1.75;margin-top:4px}
+
+.hero-side{
+  display:grid;gap:18px;
+}
+.booking-card,.promo-card{
+  background:#fff;border:1px solid var(--border-subtle);border-radius:22px;
+  padding:26px;box-shadow:var(--shadow);
+}
+.promo-card{
+  background:
+    linear-gradient(135deg, rgba(224,25,26,0.05), rgba(255,255,255,1) 35%),
+    #fff;
+}
+.promo-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 12px;border-radius:999px;background:var(--red-soft);
+  border:1px solid var(--border);color:var(--red);
+  font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;
+}
+.promo-card h2,.booking-card h2{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:2.3rem;line-height:1;letter-spacing:1px;color:var(--ink);
+  margin:16px 0 10px;
+}
+.promo-card p,.booking-card p{
+  color:var(--ink-soft);font-size:13px;line-height:1.85;
+}
+.promo-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px;
+}
+.promo-chip{
+  padding:14px;border-radius:14px;background:var(--off);
+  border:1px solid var(--border-subtle);
+}
+.promo-chip strong{
+  display:block;font-size:13px;color:var(--ink);margin-bottom:5px;
+}
+.promo-chip span{
+  font-size:12px;color:var(--ink-soft);line-height:1.7;
+}
+.booking-form{display:grid;gap:12px;margin-top:18px}
+.field{
+  width:100%;height:48px;border-radius:12px;
+  border:1px solid rgba(16,18,22,0.12);background:#fff;
+  padding:0 14px;font:600 13px 'Montserrat',sans-serif;color:var(--ink);
+}
+.field:focus{outline:none;border-color:var(--red)}
+.booking-note{
+  margin-top:12px;font-size:11px;color:var(--ink-soft);line-height:1.7;
+}
+
+.brand-strip{
+  padding:26px 4vw 12px;
+}
+.brand-strip-inner{
+  max-width:1360px;margin:0 auto;
+  background:#fff;border:1px solid var(--border-subtle);border-radius:22px;
+  box-shadow:var(--shadow);padding:20px;
+}
+.brand-strip-title{
+  text-align:center;font-size:11px;font-weight:800;color:var(--ink-soft);
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;
+}
+.brand-logos{
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;
+}
+.brand-logo{
+  min-height:58px;border-radius:14px;background:var(--off);
+  border:1px solid var(--border-subtle);display:flex;align-items:center;justify-content:center;
+  font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:1px;color:var(--ink);
+}
+
+.section{
+  padding:88px 4vw;
+}
+.section::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg, transparent, var(--red), transparent);
+}
+.section-head{text-align:center;max-width:760px;margin:0 auto 42px}
+.section-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--red-soft);border:1px solid var(--border);
+  border-radius:999px;padding:7px 14px;
+  color:var(--red);font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  margin-bottom:14px;
+}
+.section-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(2.4rem,5vw,4rem);line-height:1;letter-spacing:2px;color:var(--ink);
+  margin-bottom:12px;
+}
+.section-desc{
+  color:var(--ink-soft);font-size:14px;line-height:1.9;
+}
+
+.why-grid,.trust-grid,.testi-grid,.awards-grid,.showroom-grid{
+  max-width:1360px;margin:0 auto;display:grid;gap:18px;
+}
+.why-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.why-card,.trust-card,.testi-card,.award-card,.showroom-card,.spec-card,.gallery-card{
+  background:#fff;border:1px solid var(--border-subtle);border-radius:20px;
+  box-shadow:var(--shadow);
+}
+.why-card{
+  padding:24px;
+  display:flex;gap:16px;align-items:flex-start;
+}
+.why-icon{
+  width:44px;height:44px;border-radius:14px;
+  background:var(--red-soft);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;color:var(--red);
+  font-size:18px;flex-shrink:0;
+}
+.why-card h3{
+  font-size:16px;color:var(--ink);margin-bottom:8px;
+}
+.why-card p{
+  font-size:13px;line-height:1.85;color:var(--ink-soft);
+}
+
+.gallery-shell{
+  max-width:1360px;margin:0 auto;
+}
+.gallery-tools{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+  flex-wrap:wrap;margin-bottom:24px;
+}
+.filter-group{display:flex;gap:10px;flex-wrap:wrap}
+.filter-btn{
+  height:42px;padding:0 16px;border-radius:999px;border:1px solid var(--border-subtle);
+  background:#fff;color:var(--ink);font:700 12px 'Montserrat',sans-serif;cursor:pointer;
+}
+.filter-btn.active,.filter-btn:hover{border-color:var(--red);color:var(--red);background:var(--red-soft)}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;
+}
+.gallery-card{overflow:hidden}
+.gallery-image{
+  height:220px;position:relative;overflow:hidden;
+}
+.gallery-image img{
+  width:100%;height:100%;object-fit:cover;transition:transform 0.35s ease;
+}
+.gallery-card:hover .gallery-image img{transform:scale(1.04)}
+.gallery-badge{
+  position:absolute;top:14px;left:14px;
+  background:rgba(255,255,255,0.92);color:var(--red);border:1px solid var(--border);
+  border-radius:999px;padding:6px 10px;
+  font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+}
+.gallery-body{padding:20px}
+.gallery-brand{
+  font-size:10px;font-weight:800;color:var(--red);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:5px;
+}
+.gallery-name{
+  font-family:'Bebas Neue',sans-serif;font-size:2rem;line-height:1;letter-spacing:1px;color:var(--ink);margin-bottom:10px;
+}
+.gallery-copy{
+  color:var(--ink-soft);font-size:12px;line-height:1.8;margin-bottom:14px;
+}
+.spec-row{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+  margin-bottom:14px;
+}
+.spec-card{
+  padding:12px;border-radius:14px;background:var(--off);
+}
+.spec-card span{
+  display:block;font-size:10px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:5px;
+}
+.spec-card strong{
+  font-size:13px;color:var(--ink);
+}
+.price-row{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:14px;padding-top:14px;
+  border-top:1px solid var(--border-subtle);
+}
+.price-row strong{
+  display:block;font-size:11px;color:var(--ink-soft);margin-bottom:4px;
+}
+.price-row b{
+  font-size:18px;color:var(--ink);
+}
+
+.lead-band{
+  max-width:1360px;margin:0 auto;
+  background:linear-gradient(135deg, rgba(224,25,26,0.95), rgba(190,18,18,0.95));
+  color:#fff;border-radius:24px;padding:28px 30px;
+  display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:center;
+  box-shadow:0 18px 40px rgba(224,25,26,0.2);
+}
+.lead-band h3{
+  font-family:'Bebas Neue',sans-serif;font-size:2.4rem;line-height:1;letter-spacing:1px;margin-bottom:10px;
+}
+.lead-band p{
+  font-size:13px;line-height:1.9;color:rgba(255,255,255,0.92);
+}
+.lead-band-actions{
+  display:flex;justify-content:flex-end;gap:12px;flex-wrap:wrap;
+}
+.lead-band .btn-ghost{
+  background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.24);
+}
+
+.trust-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.trust-card{padding:22px}
+.trust-card .num{
+  font-family:'Bebas Neue',sans-serif;font-size:2.5rem;line-height:1;color:var(--red);
+}
+.trust-card h3{
+  font-size:15px;color:var(--ink);margin:10px 0 8px;
+}
+.trust-card p{
+  font-size:12px;color:var(--ink-soft);line-height:1.8;
+}
+
+.testi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.testi-card{padding:24px}
+.testi-head{
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
+}
+.testi-avatar{
+  width:54px;height:54px;border-radius:50%;overflow:hidden;background:var(--off);
+  border:1px solid var(--border-subtle);flex-shrink:0;
+}
+.testi-avatar img{width:100%;height:100%;object-fit:cover}
+.testi-name strong{
+  display:block;font-size:14px;color:var(--ink);
+}
+.testi-name span{
+  font-size:11px;color:var(--ink-soft);
+}
+.testi-stars{color:var(--red);font-size:12px;letter-spacing:2px;margin-top:4px}
+.testi-card p{
+  font-size:13px;color:var(--ink-soft);line-height:1.9;
+}
+.testi-tag{
+  margin-top:14px;display:inline-flex;padding:6px 10px;border-radius:999px;
+  background:var(--red-soft);border:1px solid var(--border);color:var(--red);
+  font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+}
+
+.awards-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.award-card{padding:24px}
+.award-card h3{
+  font-size:16px;color:var(--ink);margin-bottom:8px;
+}
+.award-card p{
+  font-size:13px;color:var(--ink-soft);line-height:1.85;
+}
+
+.showroom-grid{grid-template-columns:1.1fr .9fr}
+.showroom-card{padding:26px}
+.showroom-card h3{
+  font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:1px;color:var(--ink);margin-bottom:14px;
+}
+.info-list{display:grid;gap:16px}
+.info-row{
+  display:flex;gap:14px;align-items:flex-start;padding-bottom:14px;border-bottom:1px solid var(--border-subtle);
+}
+.info-row:last-child{border-bottom:none;padding-bottom:0}
+.info-icon{
+  width:42px;height:42px;border-radius:12px;
+  background:var(--red-soft);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;color:var(--red);font-size:17px;flex-shrink:0;
+}
+.info-row strong{
+  display:block;font-size:13px;color:var(--ink);margin-bottom:5px;
+}
+.info-row span{
+  font-size:13px;color:var(--ink-soft);line-height:1.8;
+}
+.map-card{
+  border-radius:20px;overflow:hidden;border:1px solid var(--border-subtle);box-shadow:var(--shadow);
+  background:#fff;
+}
+.map-card iframe{width:100%;height:360px;border:0;display:block}
+.showroom-photo-grid{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px;
+}
+.showroom-photo{
+  height:150px;border-radius:16px;overflow:hidden;border:1px solid var(--border-subtle);
+}
+.showroom-photo img{width:100%;height:100%;object-fit:cover}
+
+.page-cta{
+  max-width:1360px;margin:0 auto;
+  background:#fff;border:1px solid var(--border-subtle);border-radius:24px;
+  padding:30px;box-shadow:var(--shadow);text-align:center;
+}
+.page-cta h3{
+  font-family:'Bebas Neue',sans-serif;font-size:clamp(2.2rem,4vw,3.5rem);letter-spacing:1px;line-height:1;color:var(--ink);margin-bottom:12px;
+}
+.page-cta p{
+  max-width:760px;margin:0 auto 22px;color:var(--ink-soft);font-size:14px;line-height:1.9;
+}
+.page-cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+footer{
+  padding:28px 4vw 40px;background:#fff;border-top:1px solid var(--border-subtle);
+}
+.footer-inner{
+  max-width:1360px;margin:0 auto;
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;
+}
+.footer-left,.footer-right{
+  font-size:11px;color:var(--ink-soft);line-height:1.8;
+}
+.footer-right{text-align:right}
+.footer-center{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+}
+.footer-logo{
+  width:42px;height:42px;border-radius:10px;background:#fff;padding:4px;
+  border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden;
+}
+.footer-logo img{width:100%;height:100%;object-fit:contain}
+.footer-brand{
+  font-family:'Bebas Neue',sans-serif;font-size:1.4rem;letter-spacing:2px;color:var(--ink);
+}
+
+.wa-floating-wrap{
+  position:fixed;right:24px;bottom:24px;z-index:1000;
+  display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+}
+.wa-floating-label{
+  background:var(--red);color:#fff;padding:8px 12px;border-radius:8px;
+  font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+  box-shadow:0 12px 24px rgba(224,25,26,0.18);
+  transition:opacity .25s ease,transform .25s ease;
+}
+.wa-floating-label.hide{opacity:0;transform:translateY(8px);pointer-events:none}
+.wa-floating{
+  position:relative;width:62px;height:62px;border-radius:50%;
+  background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 18px 32px rgba(37,211,102,0.28);
+}
+.wa-floating::before{
+  content:'';position:absolute;inset:-6px;border-radius:50%;
+  border:2px solid rgba(37,211,102,0.34);animation:waPulse 1.9s ease-out infinite;
+}
+.wa-tooltip{
+  position:absolute;right:74px;top:50%;transform:translateY(-50%);
+  background:#fff;color:var(--ink);border:1px solid var(--border-subtle);
+  border-radius:8px;padding:8px 10px;font-size:12px;white-space:nowrap;
+  opacity:0;pointer-events:none;transition:opacity .2s ease;
+}
+.wa-floating:hover .wa-tooltip{opacity:1}
+.wa-icon{font-size:24px;line-height:1}
+
+.fade-up{
+  opacity:0;transform:translateY(20px);
+  transition:opacity .8s ease,transform .8s ease;
+}
+.fade-up.vis{opacity:1;transform:none}
+
+@keyframes waPulse{
+  0%{transform:scale(.9);opacity:.8}
+  70%{transform:scale(1.28);opacity:0}
+  100%{transform:scale(1.28);opacity:0}
+}
+
+@media (max-width:1100px){
+  .hero-inner,.lead-band,.showroom-grid{grid-template-columns:1fr}
+  .gallery-grid,.testi-grid,.awards-grid,.trust-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .why-grid{grid-template-columns:1fr}
+  .brand-logos{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+@media (max-width:900px){
+  nav{
+    grid-template-columns:minmax(0,1fr) auto;
+    display:grid;
+  }
+  .nav-toggle{display:flex}
+  .nav-menu{
+    display:none;grid-column:1 / -1;
+    background:#fff;border:1px solid var(--border-subtle);
+    border-radius:18px;box-shadow:var(--shadow);padding:14px;
+  }
+  nav.nav-open .nav-menu{display:block}
+  nav.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  nav.nav-open .nav-toggle span:nth-child(2){opacity:0}
+  nav.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .nav-links{
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;
+  }
+  .nav-links a{
+    min-height:42px;display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--border-subtle);border-radius:10px;background:var(--off);
+  }
+  .nav-links a::after{display:none}
+  .nav-right{width:100%;margin-top:12px;justify-content:space-between}
+  .hero{padding-top:108px}
+  .hero-proof{grid-template-columns:1fr}
+}
+
+@media (max-width:640px){
+  nav{padding:12px 4vw}
+  .nav-brand-name{font-size:1.2rem}
+  .nav-brand-sub{font-size:8px;letter-spacing:1.4px}
+  .nav-right{flex-direction:column;align-items:stretch}
+  .nav-phone{align-items:flex-start}
+  .btn-nav,.btn-red,.btn-ghost{width:100%}
+  .hero{padding-top:98px}
+  .hero-copy p,.section-desc,.why-card p,.trust-card p,.testi-card p,.award-card p,.page-cta p,.info-row span{font-size:13px}
+  .hero-actions,.gallery-tools,.page-cta-actions,.lead-band-actions{flex-direction:column}
+  .hero-quick,.promo-grid,.brand-logos,.gallery-grid,.testi-grid,.awards-grid,.trust-grid,.showroom-photo-grid{grid-template-columns:1fr}
+  .gallery-grid,.testi-grid,.awards-grid,.trust-grid{display:grid}
+  .spec-row{grid-template-columns:1fr}
+  .wa-floating-wrap{right:16px;bottom:16px}
+  .footer-inner{grid-template-columns:1fr;text-align:center}
+  .footer-right{text-align:center}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Showroom Tidar Motor",
+  "image": "../logo-tidar-motor.jpg",
+  "telephone": "+62-822-8536-8092",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Pahlawan Revolusi No. RT.11/06, RT.10/RW.3, Pd. Bambu, Kec. Duren Sawit",
+    "addressLocality": "Jakarta Timur",
+    "postalCode": "13430",
+    "addressCountry": "ID"
+  },
+  "url": "https://tidarshowroom.vercel.app/page-1",
+  "openingHours": "Mo-Su 08:00-19:00",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "24"
+  }
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <div class="nav-logo"><img src="../logo-tidar-motor.jpg" alt="Logo Tidar Motor"></div>
+    <div>
+      <div class="nav-brand-name">TIDAR MOTOR</div>
+      <div class="nav-brand-sub">Showroom Mobil Bekas Duren Sawit</div>
+    </div>
+  </div>
+
+  <button class="nav-toggle" type="button" aria-label="Buka navigasi" aria-expanded="false" aria-controls="navMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="nav-menu" id="navMenu">
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#stok">Stok</a></li>
+      <li><a href="#testimoni">Testimoni</a></li>
+      <li><a href="#showroom">Showroom</a></li>
+      <li><a href="#booking">Test Drive</a></li>
+      <li><a href="/">Halaman Utama</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="nav-phone">
+        <strong>0822-8536-8092</strong>
+        <span>Langsung ke Pak Wachid</span>
+      </div>
+      <a class="btn-nav" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20booking%20test%20drive%20di%20Tidar%20Motor" target="_blank" rel="noreferrer">Test Drive Sekarang</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-copy fade-up">
+      <div class="eyebrow">Duren Sawit · Jakarta Timur · Rating 5.0 Google</div>
+      <h1>MOBIL BEKAS <span class="red">SIAP PAKAI</span><br>TANPA RASA WAS-WAS</h1>
+      <p>Versi halaman ini dibuat lebih terang, lebih cepat dibaca, dan lebih fokus ke konversi. Tapi isi intinya tetap sama: unit dijelaskan transparan, nego langsung owner, proses leasing dibantu sampai ACC, dan Anda bisa datang test drive tanpa ribet.</p>
+
+      <div class="hero-actions">
+        <a class="btn-red" href="#booking">Test Drive Sekarang</a>
+        <a class="btn-ghost" href="#stok">Lihat Stok Mobil</a>
+      </div>
+
+      <div class="hero-quick">
+        <div class="hero-quick-card">
+          <strong>Telepon / WhatsApp</strong>
+          <span>0822-8536-8092<br>Langsung ke Pak Wachid</span>
+        </div>
+        <div class="hero-quick-card">
+          <strong>Jam Operasional</strong>
+          <span>Setiap hari buka pagi sampai 19.00 WIB</span>
+        </div>
+        <div class="hero-quick-card">
+          <strong>Cicilan Mulai</strong>
+          <span>Mulai Rp 4 jutaan / bulan untuk unit tertentu</span>
+        </div>
+      </div>
+
+      <div class="hero-proof">
+        <div class="hero-proof-item">
+          <div class="num">24+</div>
+          <p>Ulasan bintang 5 dari pembeli nyata yang sudah survey dan deal langsung.</p>
+        </div>
+        <div class="hero-proof-item">
+          <div class="num">13+</div>
+          <p>Tahun pengalaman jual mobil dengan pendekatan yang amanah dan tidak muter-muter.</p>
+        </div>
+        <div class="hero-proof-item">
+          <div class="num">100%</div>
+          <p>Fokus pada rasa aman: kondisi dijelaskan, proses dibantu, unit siap pakai.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-side fade-up">
+      <div class="promo-card">
+        <div class="promo-pill">Promo Bulan Ini</div>
+        <h2>Penawaran yang Lagi Banyak Ditanya</h2>
+        <p>Supaya beda dari halaman utama, versi ini lebih “sales landing page”. Ada promo, cicilan awal, dan CTA test drive yang lebih kuat buat calon pembeli yang mau cepat ambil keputusan.</p>
+        <div class="promo-grid">
+          <div class="promo-chip">
+            <strong>Free Konsultasi</strong>
+            <span>Cocok buat Anda yang masih bandingkan beberapa showroom.</span>
+          </div>
+          <div class="promo-chip">
+            <strong>Leasing Dibantu</strong>
+            <span>Pernah ditolak di tempat lain? Tetap dibantu carikan jalannya.</span>
+          </div>
+          <div class="promo-chip">
+            <strong>Harga On The Road</strong>
+            <span>Harga ditampilkan lebih jelas supaya tidak buang waktu.</span>
+          </div>
+          <div class="promo-chip">
+            <strong>Stok Bergerak Cepat</strong>
+            <span>Unit bagus sering cepat deal, jadi lebih aman chat dulu.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-card" id="booking">
+        <div class="promo-pill">Booking Test Drive</div>
+        <h2>Isi Singkat, Langsung Kami Hubungi</h2>
+        <p>Form ini sengaja singkat. Cukup 3 field supaya calon pembeli bisa cepat kirim minat tanpa capek isi data panjang.</p>
+        <form class="booking-form" id="bookingForm">
+          <input class="field" type="text" id="nama" placeholder="Nama Anda" required>
+          <input class="field" type="tel" id="telepon" placeholder="Nomor WhatsApp" required>
+          <input class="field" type="text" id="mobil" placeholder="Unit yang ingin dicoba / budget" required>
+          <button class="btn-red" type="submit">Kirim Booking via WhatsApp</button>
+        </form>
+        <div class="booking-note">Dengan klik tombol di atas, pesan booking akan otomatis dibuka ke WhatsApp Pak Wachid.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brand-strip fade-up">
+  <div class="brand-strip-inner">
+    <div class="brand-strip-title">Merek yang paling sering dicari pembeli di showroom</div>
+    <div class="brand-logos">
+      <div class="brand-logo">Toyota</div>
+      <div class="brand-logo">Honda</div>
+      <div class="brand-logo">Daihatsu</div>
+      <div class="brand-logo">Suzuki</div>
+      <div class="brand-logo">Mitsubishi</div>
+      <div class="brand-logo">Nissan</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head fade-up">
+    <div class="section-tag">Kenapa Banyak yang Nyambung di Sini</div>
+    <h2 class="section-title">KONTEN SAMA, TAPI PRESENTASINYA LEBIH RAPIH</h2>
+    <p class="section-desc">Semua yang bikin Tidar Motor kuat tetap dipertahankan: owner handle langsung, unit siap pakai, harga masuk akal, dan proses yang tidak dibiarkan ribet sendiri.</p>
+  </div>
+
+  <div class="why-grid fade-up">
+    <div class="why-card">
+      <div class="why-icon">✓</div>
+      <div>
+        <h3>Transparan dari Awal</h3>
+        <p>Pak Wachid jelaskan kondisi unit apa adanya. Bukan cuma dipoles kelihatan bagus, tapi dibikin paham supaya Anda beli dengan kepala dingin.</p>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">✓</div>
+      <div>
+        <h3>Nego Langsung Owner</h3>
+        <p>Anda bicara langsung dengan pengambil keputusan. Itu yang bikin harga terasa lebih masuk akal dan diskusinya tidak muter-muter.</p>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">✓</div>
+      <div>
+        <h3>Unit Sudah Dicek</h3>
+        <p>Fokus Tidar Motor bukan asal pajang. Mesin, interior, dan dokumen dicek dulu supaya unit yang tampil memang layak dibawa pulang.</p>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">✓</div>
+      <div>
+        <h3>Leasing Sampai ACC</h3>
+        <p>Ada pembeli yang sebelumnya mentok di tempat lain lalu tetap dibantu sampai ada jalan. Ini salah satu alasan kenapa banyak review menyebut prosesnya dibantu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="stok">
+  <div class="section-head fade-up">
+    <div class="section-tag">Showcase Produk</div>
+    <h2 class="section-title">GALERI STOK DENGAN FILTER TIPE & HARGA</h2>
+    <p class="section-desc">Di halaman ini, galeri dibuat lebih lengkap dan lebih “landing page ready”. Harga dibuat jelas, spesifikasi singkat tetap ada, dan ada label untuk membantu calon pembeli memutuskan lebih cepat.</p>
+  </div>
+
+  <div class="gallery-shell fade-up">
+    <div class="gallery-tools">
+      <div class="filter-group">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="family">Mobil Keluarga</button>
+        <button class="filter-btn" data-filter="suv">SUV</button>
+        <button class="filter-btn" data-filter="premium">Premium</button>
+      </div>
+      <div class="filter-group">
+        <button class="filter-btn active" data-price="all">Semua Harga</button>
+        <button class="filter-btn" data-price="low">≤ 250 Juta</button>
+        <button class="filter-btn" data-price="mid">251 - 500 Juta</button>
+        <button class="filter-btn" data-price="high">500 Juta+</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <article class="gallery-card" data-type="family" data-price="mid">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Toyota Innova">
+          <div class="gallery-badge">Terlaris</div>
+        </div>
+        <div class="gallery-body">
+          <div class="gallery-brand">Toyota</div>
+          <div class="gallery-name">Innova Reborn</div>
+          <div class="gallery-copy">Favorit keluarga yang ingin mobil nyaman, aman, dan tidak bikin deg-degan setelah pulang dari showroom.</div>
+          <div class="spec-row">
+            <div class="spec-card"><span>Tahun</span><strong>2019</strong></div>
+            <div class="spec-card"><span>Transmisi</span><strong>AT</strong></div>
+            <div class="spec-card"><span>Kondisi</span><strong>Siap Pakai</strong></div>
+            <div class="spec-card"><span>Status</span><strong>Stok Terbatas</strong></div>
+          </div>
+          <div class="price-row">
+            <div><strong>Harga OTR</strong><b>Rp 348.000.000</b></div>
+            <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20Toyota%20Innova%20Reborn" target="_blank" rel="noreferrer">Tanya</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="gallery-card" data-type="suv" data-price="low">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80" alt="Toyota Rush">
+          <div class="gallery-badge">Stok Terbatas</div>
+        </div>
+        <div class="gallery-body">
+          <div class="gallery-brand">Toyota</div>
+          <div class="gallery-name">Rush TRD</div>
+          <div class="gallery-copy">Cocok untuk Anda yang cari SUV compact dengan tinggi ground clearance yang enak buat dipakai harian.</div>
+          <div class="spec-row">
+            <div class="spec-card"><span>Tahun</span><strong>2018</strong></div>
+            <div class="spec-card"><span>Transmisi</span><strong>AT</strong></div>
+            <div class="spec-card"><span>Interior</span><strong>Bersih</strong></div>
+            <div class="spec-card"><span>Status</span><strong>Ready</strong></div>
+          </div>
+          <div class="price-row">
+            <div><strong>Harga OTR</strong><b>Rp 232.000.000</b></div>
+            <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20Toyota%20Rush%20TRD" target="_blank" rel="noreferrer">Tanya</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="gallery-card" data-type="premium" data-price="high">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80" alt="Mercedes S Class">
+          <div class="gallery-badge">Premium</div>
+        </div>
+        <div class="gallery-body">
+          <div class="gallery-brand">Mercedes-Benz</div>
+          <div class="gallery-name">S-Class W222</div>
+          <div class="gallery-copy">Untuk pembeli yang ingin masuk ke segmen premium dengan unit yang dijelaskan jelas dan kondisinya dipresentasikan rapi.</div>
+          <div class="spec-row">
+            <div class="spec-card"><span>Tahun</span><strong>2014</strong></div>
+            <div class="spec-card"><span>Mesin</span><strong>2.9 Diesel</strong></div>
+            <div class="spec-card"><span>Status</span><strong>Garansi ✓</strong></div>
+            <div class="spec-card"><span>Status</span><strong>Asuransi ✓</strong></div>
+          </div>
+          <div class="price-row">
+            <div><strong>Harga OTR</strong><b>Rp 3.990.000.000</b></div>
+            <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20Mercedes-Benz%20S-Class%20W222" target="_blank" rel="noreferrer">Tanya</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="gallery-card" data-type="family" data-price="low">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=1200&q=80" alt="Honda Mobilio">
+          <div class="gallery-badge">Favorit Budget</div>
+        </div>
+        <div class="gallery-body">
+          <div class="gallery-brand">Honda</div>
+          <div class="gallery-name">Mobilio CVT</div>
+          <div class="gallery-copy">Buat yang cari mobil keluarga dengan budget lebih aman tapi tetap nyaman dipakai harian dan unitnya tidak bikin capek setelah dibawa pulang.</div>
+          <div class="spec-row">
+            <div class="spec-card"><span>Tahun</span><strong>2017</strong></div>
+            <div class="spec-card"><span>Transmisi</span><strong>CVT</strong></div>
+            <div class="spec-card"><span>Mesin</span><strong>Halus</strong></div>
+            <div class="spec-card"><span>Dokumen</span><strong>Siap</strong></div>
+          </div>
+          <div class="price-row">
+            <div><strong>Harga OTR</strong><b>Rp 189.000.000</b></div>
+            <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20Honda%20Mobilio%20CVT" target="_blank" rel="noreferrer">Tanya</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="gallery-card" data-type="suv" data-price="mid">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" alt="Mitsubishi Pajero">
+          <div class="gallery-badge">Paling Dicari</div>
+        </div>
+        <div class="gallery-body">
+          <div class="gallery-brand">Mitsubishi</div>
+          <div class="gallery-name">Pajero Sport</div>
+          <div class="gallery-copy">Pilihan buat yang mau SUV gagah dengan posisi duduk nyaman dan tampilan yang tetap premium saat dipakai harian.</div>
+          <div class="spec-row">
+            <div class="spec-card"><span>Tahun</span><strong>2018</strong></div>
+            <div class="spec-card"><span>Transmisi</span><strong>AT</strong></div>
+            <div class="spec-card"><span>Status</span><strong>Siap Pakai</strong></div>
+            <div class="spec-card"><span>Review</span><strong>Rapi & Terawat</strong></div>
+          </div>
+          <div class="price-row">
+            <div><strong>Harga OTR</strong><b>Rp 498.000.000</b></div>
+            <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20Mitsubishi%20Pajero%20Sport" target="_blank" rel="noreferrer">Tanya</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="gallery-card" data-type="family" data-price="mid">
+        <div class="gallery-image">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Daihatsu Xenia">
+          <div class="gallery-badge">Cepat Deal</div>
+        </div>
+        <div class="gallery-body">
+          <div class="gallery-brand">Daihatsu</div>
+          <div class="gallery-name">Xenia R Sporty</div>
+          <div class="gallery-copy">Pilihan buat keluarga yang ingin MPV ringan, irit, dan aman untuk dipakai harian dengan harga yang tetap masuk akal.</div>
+          <div class="spec-row">
+            <div class="spec-card"><span>Tahun</span><strong>2019</strong></div>
+            <div class="spec-card"><span>Transmisi</span><strong>MT</strong></div>
+            <div class="spec-card"><span>Interior</span><strong>Rapi</strong></div>
+            <div class="spec-card"><span>Leasing</span><strong>Bisa</strong></div>
+          </div>
+          <div class="price-row">
+            <div><strong>Harga OTR</strong><b>Rp 214.000.000</b></div>
+            <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20Daihatsu%20Xenia%20R%20Sporty" target="_blank" rel="noreferrer">Tanya</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="lead-band fade-up">
+    <div>
+      <h3>PROMO BULAN INI: BOOKING TEST DRIVE GRATIS</h3>
+      <p>Cukup chat atau isi form singkat. Kalau Anda sudah punya gambaran budget, Tidar Motor bisa bantu arahkan ke unit yang paling masuk akal dulu supaya prosesnya tidak buang waktu.</p>
+    </div>
+    <div class="lead-band-actions">
+      <a class="btn-nav" href="#booking">Booking Test Drive</a>
+      <a class="btn-ghost" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20promo%20bulan%20ini%20di%20Tidar%20Motor" target="_blank" rel="noreferrer">Chat Promo Bulan Ini</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head fade-up">
+    <div class="section-tag">Kepercayaan & Sosial Proof</div>
+    <h2 class="section-title">ANGKA & BUKTI YANG BIKIN ORANG LEBIH TENANG</h2>
+    <p class="section-desc">Halaman utama sudah kuat di rasa. Di versi ini, kami tambah blok angka supaya calon pembeli cepat menangkap kenapa Tidar Motor enak dijadikan tempat survey pertama.</p>
+  </div>
+
+  <div class="trust-grid fade-up">
+    <div class="trust-card">
+      <div class="num">5.0</div>
+      <h3>Rating Google Maps</h3>
+      <p>24 ulasan bintang lima dari pembeli nyata. Banyak yang menyinggung proses, unit, harga masuk akal, dan bantuan leasing.</p>
+    </div>
+    <div class="trust-card">
+      <div class="num">24+</div>
+      <h3>Pembeli Memberi Ulasan</h3>
+      <p>Bukan angka kosong. Review datang dari orang yang benar-benar sudah survey, nego, lalu deal di showroom.</p>
+    </div>
+    <div class="trust-card">
+      <div class="num">13+</div>
+      <h3>Tahun Menjalankan Showroom</h3>
+      <p>Pengalaman ini terasa di cara komunikasi: tidak kaku, tidak ribet, dan langsung ke poin penting yang pembeli butuhkan.</p>
+    </div>
+    <div class="trust-card">
+      <div class="num">ACC</div>
+      <h3>Leasing Dibantu Sampai Jalan</h3>
+      <p>Salah satu nilai yang paling sering disebut adalah bantuan proses leasing, termasuk ketika di tempat lain sempat belum tembus.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimoni">
+  <div class="section-head fade-up">
+    <div class="section-tag">Testimoni Pelanggan</div>
+    <h2 class="section-title">MEREKA DATANG, SURVEY, LALU BILANG PROSESNYA ENAK</h2>
+    <p class="section-desc">Biar beda dari halaman utama, di sini testimoni dibuat lebih visual dengan foto profil agar social proof-nya terasa lebih hidup.</p>
+  </div>
+
+  <div class="testi-grid fade-up">
+    <article class="testi-card">
+      <div class="testi-head">
+        <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Sal Apryd"></div>
+        <div class="testi-name">
+          <strong>Sal Apryd</strong>
+          <span>2 bulan lalu</span>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <p>"Proses ambil Innova di Tidar Motor lancar jaya. Pak Wachid kooperatif dari awal sampai unit dibawa pulang. Nego harganya juga masuk akal dan gak kaku."</p>
+      <div class="testi-tag">Beli Toyota Innova</div>
+    </article>
+
+    <article class="testi-card">
+      <div class="testi-head">
+        <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Shalsabilla"></div>
+        <div class="testi-name">
+          <strong>Shalsabilla</strong>
+          <span>2 bulan lalu</span>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <p>"Saya baru beli Toyota Rush second di Showroom Tidar Motor dan cukup puas dengan pelayanannya. Mobilnya bagus, mesin halus, interior bersih, dan sesuai penjelasan."</p>
+      <div class="testi-tag">Beli Toyota Rush</div>
+    </article>
+
+    <article class="testi-card">
+      <div class="testi-head">
+        <div class="testi-avatar"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" alt="Nyongs Sky"></div>
+        <div class="testi-name">
+          <strong>Nyongs Sky</strong>
+          <span>2 bulan lalu</span>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+      <p>"Prosesnya super gampang dan sama sekali ga ribet karena dibantu full sama Pak Wachid. Orangnya asik diajak diskusi dan ga nutup-nutupin kondisi mobil."</p>
+      <div class="testi-tag">Proses Gampang</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head fade-up">
+    <div class="section-tag">Penguat Kredibilitas</div>
+    <h2 class="section-title">HALAMAN INI DIBEDAKAN DENGAN BLOK PENGHARGAAN</h2>
+    <p class="section-desc">Karena Anda ingin subpage yang beda nuansa, saya tambahkan area penghargaan/sertifikasi bergaya clean sebagai penguat kepercayaan visual.</p>
+  </div>
+
+  <div class="awards-grid fade-up">
+    <article class="award-card">
+      <h3>Dealer dengan Rating 5.0</h3>
+      <p>Banyak showroom ngomong amanah. Di sini ada bukti yang bisa dilihat langsung dari review Google Maps pembeli nyata.</p>
+    </article>
+    <article class="award-card">
+      <h3>Garansi & Asuransi per Unit</h3>
+      <p>Ini bukan sekadar gimmick visual. Banyak pembeli merasa lebih tenang karena ada pegangan setelah transaksi selesai.</p>
+    </article>
+    <article class="award-card">
+      <h3>Leasing Friendly</h3>
+      <p>Nilai tambah yang sangat kuat untuk landing page karena sangat relate dengan calon pembeli yang takut proses kreditnya mentok.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="showroom">
+  <div class="section-head fade-up">
+    <div class="section-tag">Informasi Showroom</div>
+    <h2 class="section-title">DATANG LANGSUNG, LIHAT UNITNYA, LALU RASAKAN BEDANYA</h2>
+    <p class="section-desc">Supaya subpage ini lebih komplet, bagian showroom dibuat lebih kaya: alamat, jam operasional, embed maps, plus visual suasana showroom dan tim.</p>
+  </div>
+
+  <div class="showroom-grid fade-up">
+    <div class="showroom-card">
+      <h3>Showroom Tidar Motor</h3>
+      <div class="info-list">
+        <div class="info-row">
+          <div class="info-icon">📍</div>
+          <div><strong>Alamat</strong><span>Jl. Pahlawan Revolusi No. RT.11/06, RT.10/RW.3, Pd. Bambu, Kec. Duren Sawit, Jakarta Timur 13430</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🕐</div>
+          <div><strong>Jam Operasional</strong><span>Setiap hari buka pagi sampai 19.00 WIB. Hari Jumat biasanya paling ramai, jadi lebih aman chat dulu sebelum datang.</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">📞</div>
+          <div><strong>WhatsApp / Telepon</strong><span>0822-8536-8092 · Langsung ke Pak Wachid</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-icon">🗺</div>
+          <div><strong>Kode Maps</strong><span>QV8W+8W Pd. Bambu, Jakarta Timur</span></div>
+        </div>
+      </div>
+
+      <div class="showroom-photo-grid">
+        <div class="showroom-photo"><img src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?auto=format&fit=crop&w=900&q=80" alt="Foto showroom"></div>
+        <div class="showroom-photo"><img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Foto tim sales"></div>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <iframe
+        src="https://www.google.com/maps?q=QV8W%2B8W%20Pd.%20Bambu%2C%20Jakarta%20Timur&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Lokasi Tidar Motor di Google Maps">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="page-cta fade-up">
+    <h3>MAU YANG VERSI CEPAT JADI LEAD? INI HALAMANNYA</h3>
+    <p>Subpage ini sengaja dibuat beda warna dan sedikit lebih agresif untuk menangkap lead. Cocok dipakai untuk campaign iklan, promo bulan ini, atau jalur trafik yang fokus ke test drive dan chat WhatsApp.</p>
+    <div class="page-cta-actions">
+      <a class="btn-red" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20booking%20test%20drive%20di%20Tidar%20Motor" target="_blank" rel="noreferrer">Test Drive Sekarang</a>
+      <a class="btn-ghost" href="/">Lihat Halaman Utama</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-left">© 2026 Tidar Motor · Dealer mobil bekas Duren Sawit, Jakarta Timur</div>
+    <div class="footer-center">
+      <div class="footer-logo"><img src="../logo-tidar-motor.jpg" alt="Logo Tidar Motor"></div>
+      <div class="footer-brand">TIDAR MOTOR</div>
+    </div>
+    <div class="footer-right">Pak Wachid · 0822-8536-8092 · Buka setiap hari sampai 19.00 WIB</div>
+  </div>
+</footer>
+
+<div class="wa-floating-wrap">
+  <div class="wa-floating-label" id="waLabel">Chat Cepat →</div>
+  <a class="wa-floating" href="https://wa.me/6282285368092?text=Halo%20Pak%20Wachid%2C%20saya%20mau%20tanya%20stok%20atau%20booking%20test%20drive" target="_blank" rel="noreferrer" aria-label="Chat WhatsApp">
+    <span class="wa-tooltip">Chat Pak Wachid</span>
+    <span class="wa-icon">💬</span>
+  </a>
+</div>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add('vis');
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+
+const nav = document.querySelector('nav');
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+const closeMobileNav = () => {
+  if (!nav || !navToggle) return;
+  nav.classList.remove('nav-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+};
+
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 900) closeMobileNav();
+  });
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 900) closeMobileNav();
+});
+
+const typeButtons = document.querySelectorAll('[data-filter]');
+const priceButtons = document.querySelectorAll('[data-price]');
+const cards = document.querySelectorAll('#galleryGrid .gallery-card');
+let activeType = 'all';
+let activePrice = 'all';
+
+const renderFilters = () => {
+  cards.forEach((card) => {
+    const typeMatch = activeType === 'all' || card.dataset.type === activeType;
+    const priceMatch = activePrice === 'all' || card.dataset.price === activePrice;
+    card.style.display = typeMatch && priceMatch ? '' : 'none';
+  });
+};
+
+typeButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    typeButtons.forEach((btn) => btn.classList.remove('active'));
+    button.classList.add('active');
+    activeType = button.dataset.filter;
+    renderFilters();
+  });
+});
+
+priceButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    priceButtons.forEach((btn) => btn.classList.remove('active'));
+    button.classList.add('active');
+    activePrice = button.dataset.price;
+    renderFilters();
+  });
+});
+
+const bookingForm = document.getElementById('bookingForm');
+if (bookingForm) {
+  bookingForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const nama = document.getElementById('nama').value.trim();
+    const telepon = document.getElementById('telepon').value.trim();
+    const mobil = document.getElementById('mobil').value.trim();
+    const message = `Halo Pak Wachid, saya mau booking test drive.%0A%0ANama: ${encodeURIComponent(nama)}%0AWhatsApp: ${encodeURIComponent(telepon)}%0AUnit/Budget: ${encodeURIComponent(mobil)}`;
+    window.open(`https://wa.me/6282285368092?text=${message}`, '_blank');
+  });
+}
+
+const waLabel = document.getElementById('waLabel');
+setTimeout(() => {
+  if (waLabel) waLabel.classList.add('hide');
+}, 5000);
+</script>
+</body>
+</html>
